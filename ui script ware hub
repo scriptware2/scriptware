@@ -1,17 +1,1 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Sandyhub", "Synapse")
-local Tab = Window:NewTab("war tycoon")
-local Section = Tab:NewSection("war tycoon")
-Section:NewButton("Run the script", "will run the script", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0wartycoon", true))()
-    print("Clicked")
-end)
-local Tab = Window:NewTab("Admin cmd script")
-local Section = Tab:NewSection("Admin cmd script")
-Section:NewButton("run the script", "will run the script", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
-    print("Clicked")
-end)
-Section:NewSlider("walkspeed", "walkspeed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-end)
+
